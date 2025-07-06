@@ -312,6 +312,24 @@
         font-size: 0.75rem;
         padding: 4px 8px;
     }
+    .testimonials-container {
+        transform: scale(0.8);
+        padding: auto 40px;
+        margin: auto 20px;
+        height: 350px;
+    }
+
+    .go-scroll-combined {
+        width: 70px;
+        height: 70px;
+    }
+
+    .go-text {
+        font-size: 30px;
+    }
+    .bbgg {
+        top: 57%;
+    }
 }
 
 
