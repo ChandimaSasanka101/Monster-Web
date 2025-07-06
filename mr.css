@@ -7,14 +7,13 @@
         height: 40px;
     }
 
-    .clock .display {
-        margin-right: 40px;
-        font-size: 16px;
-    }
-
     /* Info section adjustments */
     .info-content h1 {
         font-size: 70px;
+    }
+
+    .logo-overlay {
+        background-size: 80%;
     }
 
     .ppp,
@@ -22,30 +21,55 @@
         font-size: 30px;
     }
 
-    /* Floating cards adjustments */
-    .floating-cards {
-        gap: 50px;
+    /* Team section adjustments */
+    .team-container {
+        padding: 0 50px;
     }
 
-    /* Card design section */
-    .card-row {
-        flex-wrap: wrap;
-        gap: 30px;
+    .team-grid {
+        gap: 40px;
+        display: grid;
+        place-items: center;
+        justify-content: center;
     }
 
-    /* We are section */
-    .wrapper .static-txt {
-        font-size: 70px;
+    .team-member {
+        padding: 40px 30px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
-    .dynamic-txts li {
-        font-size: 70px;
-    }
+
 
     /* Footer adjustments */
     .footer-left img {
         width: 300px;
     }
+
+    .footer-left p {
+        font-size: 14px;
+    }
+
+    .footer-contact {
+        gap: 30px;
+    }
+
+    .footer-links {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .footer-links div {
+        margin-right: 20px;
+    }
+
+    .footer-social {
+        gap: 20px;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -67,9 +91,7 @@
         font-size: 14px;
     }
 
-    .clock .display {
-        display: none;
-    }
+
 
     /* Hero section */
     .hero-logo {
@@ -86,18 +108,38 @@
         font-size: 24px;
     }
 
-    /* Floating cards */
-    .floating-cards {
-        flex-wrap: wrap;
-        justify-content: center;
+    /* Team srction */
+    .team-section {
+        padding: 60px 130px;
+    }
+
+    .team-title {
+        font-size: 2.2rem;
+        margin-bottom: 50px;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
         gap: 30px;
     }
 
-    /* Card design section */
-    .card1 {
-        margin-top: 150px;
-        width: 220px;
-        height: 300px;
+    .team-member {
+        padding: 30px 20px;
+    }
+
+    .member-image {
+        width: 120px;
+        height: 120px;
+        font-size: 3rem;
+    }
+
+    .member-name {
+        font-size: 1.5rem;
+    }
+
+    .skill-tag {
+        font-size: 0.8rem;
+        padding: 5px 10px;
     }
 
     /* Contact section */
@@ -109,59 +151,44 @@
         font-size: 2rem;
     }
 
-    /* We are section */
-    .wrapper .static-txt {
-        font-size: 40px;
-        text-align: center;
-    }
-
-    .wrapper .dynamic-txts {
-        margin-left: 0;
-        height: 60px;
-        line-height: 60px;
-    }
-
-    .dynamic-txts li {
-        font-size: 40px;
-    }
-
-    .dynamic-txts li span {
-        line-height: 50px;
-    }
-
     /* Footer */
     .footer {
         flex-direction: column;
+        text-align: center;
     }
 
     .footer-contact {
         gap: 50px;
     }
 
+    .footer-left,
+    .footer-right {
+        width: 100%;
+        padding: 20px 0;
+    }
 
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .footer-links div {
+        margin-bottom: 20px;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .footer-social {
+        justify-content: center;
+    }
 
     .skills-container,
     .portfolio-container {
-        padding: 0 20px;
+        padding: 0 60px;
+    }
+
+    .testimonials-container {
+        transform: scale(0.95);
+        padding: auto 80px;
+        margin: auto 50px;
     }
 
     .portfolio-grid {
@@ -189,6 +216,101 @@
 
     .stat-number {
         font-size: 2.5rem;
+    }
+
+
+
+
+    .skills-section,
+    .stats-section,
+    .portfolio-section,
+    .testimonials-section {
+        padding: 60px 0;
+    }
+
+    .contact-section {
+        padding: 60px 50px;
+    }
+
+
+    .skills-title,
+    .portfolio-title,
+    .testimonials-title {
+        font-size: 2.2rem;
+        margin-bottom: 60px;
+    }
+
+
+    .go-scroll-combined {
+        width: 90px;
+        height: 90px;
+    }
+
+    .go-text {
+        font-size: 40px;
+    }
+
+
+    .skill-item {
+        padding: 25px;
+    }
+
+    .skills-grid {
+        gap: 30px;
+    }
+
+
+    .stat-label {
+        font-size: 1rem;
+    }
+
+
+    .footer-links div {
+        margin-bottom: 30px;
+    }
+
+    .team-container {
+        padding: 0 30px;
+    }
+
+    .team-grid {
+        gap: 40px;
+        display: grid;
+    }
+
+    .team-member {
+        transform: scale(0.95);
+
+    }
+}
+
+
+@media (max-width: 480px) {
+    .team-container {
+        padding: 0 15px;
+    }
+
+    .team-title {
+        font-size: 1.8rem;
+    }
+
+    .member-image {
+        width: 100px;
+        height: 100px;
+        font-size: 2.5rem;
+    }
+
+    .member-name {
+        font-size: 1.3rem;
+    }
+
+    .skills-list {
+        gap: 6px;
+    }
+
+    .skill-tag {
+        font-size: 0.75rem;
+        padding: 4px 8px;
     }
 }
 
@@ -257,14 +379,10 @@
     .mobile-menu .nav-links a {
         font-size: 18px;
         padding: 10px;
-        
+
     }
 
-    .clock .display {
-        margin-right: 20px;
-        font-size: 12px;
-        letter-spacing: 0;
-    }
+
 
     /* Hero section for mobile */
     .hero-logo {
@@ -272,40 +390,25 @@
         bottom: 120px;
     }
 
-    .go-button {
-        width: 70px;
-        height: 70px;
-        font-size: 30px;
+    .go-scroll-combined {
+        transform: scale(0.8);
+        z-index: 1;
     }
 
     .black-bar {
         height: 100px;
     }
 
-    /* B-cards (popup cards) */
-    .b-cards {
-        margin-top: -60px;
-        grid-template-columns: 1fr 1fr;
-        gap: 50px;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .b-cards .card {
-        width: 140px;
-        height: 200px;
-    }
-
-    .b-cards .card-logo img {
-        width: 50px;
-        height: 50px;
-    }
-
-    .b-cards .card p {
-        font-size: 12px;
+    .logo-overlay {
+        background-size: 60%;
     }
 
     /* Info section for mobile */
+
+    .info-section {
+        width: 100%;
+        height: 70vh;
+    }
     .info-content {
         margin-bottom: 150px;
     }
@@ -315,6 +418,16 @@
         letter-spacing: 2px;
     }
 
+    .bbg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 120%;
+        left: 0;
+    }
+
+   
+
     .ppp,
     .pp {
         font-size: 18px;
@@ -322,48 +435,9 @@
 
     }
 
-    /* Floating cards for mobile */
-    .floating-cards {
-        margin-top: -160px;
-        grid-template-columns: 1fr 1fr;
-        gap: 50px;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .floating-cards .card {
-
-        width: 140px;
-        height: 200px;
-    }
-
-    .floating-cards .card-logo img {
-        width: 50px;
-        height: 50px;
-    }
-
-    .floating-cards .card p {
-        font-size: 12px;
-    }
-
-    /* Review section for mobile */
-    .card-row {
-        background-color: black;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 250px;
-    }
-
-    .card1 {
-        margin-top: 30px;
-        width: 200px;
-        height: 280px;
-    }
-
-    .card1-info span {
-        font-size: 20px;
+    /* Team section for mobile */
+    .team-section {
+        padding: 60px 35px;
     }
 
     /* Contact section for mobile */
@@ -380,62 +454,6 @@
         flex-direction: column;
         gap: 15px;
     }
-
-
-
-
-
-
-
-
-
-
-
-    /* We are section */
-    .wrapper .static-txt {
-        font-size: 32px;
-    }
-
-    .dynamic-txts li {
-        list-style: none;
-        text-align: left;
-        position: relative;
-        top: 0;
-
-    }
-
-    .wrapper .dynamic-txts {
-        font-size: 42px !important;
-        line-height: 46px !important;
-    }
-
-    .dynamic-txts li span {
-        position: relative;
-        margin: 5px 0;
-        line-height: 40px;
-    }
-
-    .dynamic-txts li span::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: #000000;
-        border-left: 5px solid #707070;
-        animation: typing 3s steps(10) infinite;
-    }
-
-    @keyframes slide {
-        100% {
-            top: -100px;
-        }
-    }
-
-
-
-
 
 
     /* Footer for mobile */
@@ -469,15 +487,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
     .skills-title,
     .portfolio-title,
     .testimonials-title {
@@ -501,12 +510,20 @@
 
     /* Further reduce sizes for very small screens */
     .info-content h1 {
-        font-size: 28px;
+        font-size: 30px;
     }
-
+    
+    .info-content {
+        margin: auto;
+        padding: 0 15px;
+    }
     .ppp,
     .pp {
         font-size: 16px;
+    }
+
+    .ppp {
+        margin-top: 50px;
     }
 
     .floating-cards .card {
