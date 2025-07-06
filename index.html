@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Set the character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- Set the viewport for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Set the page title -->
+    <title>CREATIVE AXIS - Your Creative Hub</title>
+    <!-- SEO description for search engines -->
+    <meta name="description"
+        content="Creative Axis - Central hub for all creative solutions including 3D works, video editing, graphic design, and web applications.">
+    <!-- Link to main stylesheet -->
+    <link rel="stylesheet" href="styless.css">
+    <!-- Link to Font Awesome icons stylesheet -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <!-- Link to additional responsive/mobile styles -->
+    <link rel="stylesheet" href="mr.css">
+    <!-- Preload the logo image for faster loading -->
+    <link rel="preload" href="img/LogoW.png" as="image">
+    <!-- Preload the hero video for faster loading -->
+    <link rel="preload" href="media/New logo animation.mp4" as="video" type="video/mp4">
+</head>
+
+<body>
+    <!-- Particle Background -->
+    <div id="particles-container"></div>
+    <!-- Cursor Trail -->
+    <div class="cursor-trail"></div>
+
+
+
+
+
+    <!-- Start Loading Section -->
+
+    <div class="loading-screen">
+        <div class="loading-content">
+            <img src="img/LogoW.png" alt="Creative Axis Logo" class="loading-logo">
+        </div>
+    </div>
+
+    <!-- End Loading Section -->
+
+
+
+
+
+    <!-- Start Navbar Section -->
+
+    <nav id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="logo">
+            <a href="index.html" aria-label="Creative Axis Home">
+                <img src="img/LogoW.png" alt="Creative Axis Logo">
+            </a>
+        </div>
+        <div class="center-container">
+            <ul class="nav-links">
+                <li><a href="#hero" aria-label="Go to Home section">Home</a></li>
+                <li><a href="#Products" aria-label="Go to Products section">About Us</a></li>
+                <li><a href="#portfolio" aria-label="Go to Portfolio section">Works</a></li>
+                <li><a href="#testimonials" aria-label="Go to Reviews section">Reviews</a></li>
+                <li><a href="#contact" aria-label="Go to Contact section">Contact</a></li>
+            </ul>
+        </div>
+        <!-- Mobile Menu Toggle -->
+        <div class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle mobile menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <!-- <div class="clock">
+            <div class="display" aria-live="polite" aria-label="Current time">
+            </div>
+        </div> -->
+    </nav>
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobile-menu">
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#Products">About Us</a></li>
+            <li><a href="#portfolio">Works</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- End Navbar Section -->
+
+
+
+
+
+    <!-- Start Hero Section -->
+
+    <section class="hero" id="hero" role="banner">
+        <div class="video-container">
+            <video autoplay muted loop playsinline class="bg-video" aria-hidden="true">
+                <source src="media/New logo animation.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+        <img src="img/LogoWW.png" alt="Creative Axis Logo" class="hero-logo">
+        <!-- Replace the existing go-button and scroll-indicator in the hero section -->
+        <div class="black-bar">
+            <div class="hero-content">
+                <!-- Combined go-button and scroll-indicator as a clickable div -->
+                <div class="go-scroll-combined" aria-label="Explore our services" id="goButton">
+                    <div class="go-text">GO</div>
+                    <!-- <div class="scroll-arrow"></div> -->
+                    <div class="ripple-effect"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Remove the separate scroll-indicator div -->
+    </section>
+
+    <!-- End Hero Section -->
+
+
+
+
+
+    <!-- Start Info Section -->
+
+    <div class="bgh">
+        <section class="info-section" id="Products">
+            <div class="logo-overlay"></div>
+
+            <div class="info-content contenttt">
+                <p class="pp ">SUGGESTS A</p>
+                <h1 class="glitch-text" data-text="CENTRAL HUB">CENTRAL HUB</h1>
+                <p class="ppp">FOR ALL</p>
+                <h1 class="glitch-text" data-text="CREATIVE SOLUTION">CREATIVE SOLUTION</h1>
+            </div>
+        </section>
+    </div>
+
+    <!-- End Info Section -->
+
+
+
+
+
+    <!-- Start Centered Image Between Info and Skills -->
+    <div class="background-container">
+        <div class="bbg"></div>
+        <div class="bbgg"></div>
+    </div>
+    <!-- End Centered Image Between Info and Skills -->
+
+
+
+
+
+    <!-- Start Skills Bars Section -->
+
+    <div class="bgh">
+        <section class="skills-section" id="skills" aria-labelledby="skills-title">
+            <div class="skills-container">
+                <h2 class="skills-title" id="skills-title">OUR EXPERTISE</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>3D Modeling & Animation</span>
+                            <span class="skill-percentage">65%</span>
+                        </div>
+                        <div class="skill-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0"
+                            aria-valuemax="100" aria-label="3D Modeling skill level">
+                            <div class="skill-progress" data-width="65%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Video Editing & Motion Graphics</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                            aria-valuemax="100" aria-label="Video Editing skill level">
+                            <div class="skill-progress" data-width="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Graphic Design & Branding</span>
+                            <span class="skill-percentage">92%</span>
+                        </div>
+                        <div class="skill-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0"
+                            aria-valuemax="100" aria-label="Graphic Design skill level">
+                            <div class="skill-progress" data-width="92%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Web Development & Applications</span>
+                            <span class="skill-percentage">64%</span>
+                        </div>
+                        <div class="skill-bar" role="progressbar" aria-valuenow="64" aria-valuemin="0"
+                            aria-valuemax="100" aria-label="Web Development skill level">
+                            <div class="skill-progress" data-width="64%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- End Skills Bars Section -->
+
+
+
+
+
+    <!-- Start Team Section -->
+
+    <div class="bgh">
+        <section class="team-section" id="team" aria-labelledby="team-title">
+            <div class="team-container">
+                <h2 class="team-title" id="team-title">MEET OUR TEAM</h2>
+                <div class="team-grid">
+
+                    <!-- Team Member 1 -->
+                    <div class="team-member member-1 " tabindex="0" role="article">
+                        <div class="member-image">
+                            <!-- <i class="fas fa-user" aria-hidden="true"></i> -->
+                            <img src="img/ts.jpg" alt="Editor 1">
+                        </div>
+                        <h3 class="member-name">Thushara Sadaruwan</h3>
+                        <p class="member-role">Senior Creative Director</p>
+                        <div class="member-skills">
+                            <h4>Specializations</h4>
+                            <div class="skills-list">
+                                <span class="skill-tag">3D Modeling</span>
+                                <span class="skill-tag">Graphic Design</span>
+                                <span class="skill-tag">Video Editing</span>
+                            </div>
+                        </div>
+                        <div class="member-contact">
+                            <a href="mailto:thusharasandaruwan09@gmail.com"
+                                aria-label="Send email to thusharasandaruwan09@gmail.com" 
+                                class="contact-btnn">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 2 -->
+                    <div class="team-member member-2" tabindex="0" role="article">
+                        <div class="member-image">
+                            <!-- <i class="fas fa-user" aria-hidden="true"></i> -->
+                            <img src="img/ch.jpg" alt="Editor 2">
+                        </div>
+                        <h3 class="member-name">Chandima Sasanka</h3>
+                        <p class="member-role">Lead Designer & Frontend Developer</p>
+                        <div class="member-skills">
+                            <h4>Specializations</h4>
+                            <div class="skills-list">
+                                <span class="skill-tag">Graphic Design</span>
+                                <span class="skill-tag">Frontend Development</span>
+                                <span class="skill-tag">Logo Design</span>
+                            </div>
+                        </div>
+                        <div class="member-contact">
+                            <a href="mailto:kabsasanka@gmail.com"
+                                aria-label="Send email to kabsasanka@gmail.com" 
+                                class="contact-btnn">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 3 -->
+                    <div class="team-member member-3" tabindex="0" role="article">
+                        <div class="member-image">
+                            <!-- <i class="fas fa-user" aria-hidden="true"></i> -->
+                            <img src="img/dw.png" alt="Editor 3">
+                        </div>
+                        <h3 class="member-name">Duhudu Wijesinghe</h3>
+                        <p class="member-role">Full Stack Developer</p>
+                        <div class="member-skills">
+                            <h4>Specializations</h4>
+                            <div class="skills-list">
+                                <span class="skill-tag">Frontend Development</span>
+                                <span class="skill-tag">Backend Development</span>
+                                <span class="skill-tag">Database Management</span>
+                            </div>
+                        </div>
+                        <div class="member-contact">
+                            <a href="mailto:wijesingheduhudu@gmail.com"
+                                aria-label="Send email to wijesingheduhudu@gmail.com" 
+                                class="contact-btnn">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- End Team Section -->
+
+
+
+
+
+    <!-- Start Counter Stats Section -->
+
+    <div class="bgh">
+        <section class="stats-section" aria-labelledby="stats-title">
+            <h2 id="stats-title" class="sr-only">Our Statistics</h2>
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="50" aria-label="15 projects completed">0</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="45" aria-label="85 happy clients">0</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="2" aria-label="4 years experience">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="24" aria-label="24 hours support">0</div>
+                    <div class="stat-label">Hours Support</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- End Counter Stats Section -->
+
+
+
+
+
+    <!-- Start Portfolio Section -->
+
+    <div class="bgh">
+        <section class="portfolio-section" id="portfolio" aria-labelledby="portfolio-title">
+            <div class="portfolio-container">
+                <h2 class="portfolio-title" id="portfolio-title">OUR WORK</h2>
+                <div class="portfolio-filter" role="tablist" aria-label="Portfolio categories">
+                    <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true"
+                        aria-controls="portfolio-grid">ALL</button>
+                    <button class="filter-btn" data-filter="3d" role="tab" aria-selected="false"
+                        aria-controls="portfolio-grid">3D WORKS</button>
+                    <button class="filter-btn" data-filter="video" role="tab" aria-selected="false"
+                        aria-controls="portfolio-grid">VIDEO</button>
+                    <button class="filter-btn" data-filter="design" role="tab" aria-selected="false"
+                        aria-controls="portfolio-grid">DESIGN</button>
+                    <button class="filter-btn" data-filter="web" role="tab" aria-selected="false"
+                        aria-controls="portfolio-grid">WEB</button>
+                </div>
+                <div class="portfolio-grid" id="portfolio-grid" role="tabpanel">
+                    <article class="portfolio-item" data-category="3d" tabindex="0">
+                        <div class="portfolio-image">
+                            <img src="img/3D Modelling.jpg" alt="3D Architecture Visualization">
+                            <div class="portfolio-overlay">
+                                <h3>3D Modelling</h3>
+                                <p>"Shaping your concepts into reality"</p>
+                                <a href="https://drive.google.com/drive/folders/12L15I-LZxqn9_G_V2AuyPnqfPezn5q8L?usp=sharing"
+                                    target="_blank" rel="noopener noreferrer" class="view-project-btn" role="button"
+                                    aria-label="View 3D Architecture project">
+                                    View Project
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="portfolio-item" data-category="video" tabindex="0">
+                        <div class="portfolio-image">
+                            <img src="img/Commercial Video.jpg" alt="Commercial Video Production">
+                            <div class="portfolio-overlay">
+                                <h3>Event & Personal Videos</h3>
+                                <p>"Crafting your memories into movies"</p>
+                                <a href="https://drive.google.com/drive/folders/1R5-yBji1Kl6CgZGlb-nZv09-1RV6LfVG?usp=sharing"
+                                    target="_blank" rel="noopener noreferrer" class="view-project-btn" role="button"
+                                    aria-label="View 3D Architecture project">
+                                    View Project
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="portfolio-item" data-category="design" tabindex="0">
+                        <div class="portfolio-image">
+                            <img src="img/Brand Identity.jpg" alt="Brand Identity Design">
+                            <div class="portfolio-overlay">
+                                <h3>Branding & Logo Design</h3>
+                                <p>"Building your unique brand identity"</p>
+                                <a href="https://drive.google.com/drive/folders/1jRfDpGgvMHymA1cwWlfyiWRwyr1Mofqh?usp=sharing"
+                                    target="_blank" rel="noopener noreferrer" class="view-project-btn" role="button"
+                                    aria-label="View 3D Architecture project">
+                                    View Project
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="portfolio-item" data-category="web" tabindex="0">
+                        <div class="portfolio-image">
+                            <img src="img/E-commerce Site.png" alt="E-commerce Website">
+                            <div class="portfolio-overlay">
+                                <h3>E-commerce Solutions</h3>
+                                <p>"Taking your business online, effectively"</p>
+                                <a href="https://drive.google.com/drive/folders/13jnrZYjLzhtGkwCt2FxqIwWtbyOXRB9Z?usp=sharing"
+                                    target="_blank" rel="noopener noreferrer" class="view-project-btn" role="button"
+                                    aria-label="View 3D Architecture project">
+                                    View Project
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="portfolio-item" data-category="3d" tabindex="0">
+                        <div class="portfolio-image">
+                            <img src="img/Product Visualization.jpg" alt="3D Product Visualization">
+                            <div class="portfolio-overlay">
+                                <h3>3D Visualization & Rendering</h3>
+                                <p>3"Bringing designs to photorealistic life"</p>
+                                <a href="https://drive.google.com/drive/folders/14wYatpAR1kmYcQwWMKrD20-a3SR2p7VO?usp=sharing"
+                                    target="_blank" rel="noopener noreferrer" class="view-project-btn" role="button"
+                                    aria-label="View 3D Architecture project">
+                                    View Project
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="portfolio-item" data-category="design" tabindex="0">
+                        <div class="portfolio-image">
+                            <img src="img/Print Design.jpeg" alt="Print Design Materials">
+                            <div class="portfolio-overlay">
+                                <h3>Marketing & Advertising Materials</h3>
+                                <p>"Designs that attract your audience"</p>
+                                <a href="https://drive.google.com/drive/folders/1EN1qGWpw73JYHi2My6oA2F_OYmpLb4SD?usp=sharing"
+                                    target="_blank" rel="noopener noreferrer" class="view-project-btn" role="button"
+                                    aria-label="View 3D Architecture project">
+                                    View Project
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- View More Buttons -->
+                <div class="view-more-container services-list" id="view-more-buttons-container">
+                    <a href="#" class="view-more-btn" data-category-button="3d" style="display: none;"
+                        data-service="3d-works">View More 3D
+                        WORKS </a>
+                    <a href="#" class="view-more-btn" data-category-button="video" style="display: none;"
+                        data-service="video-editing">View More
+                        VIDEO Project </a>
+                    <a href="#" class="view-more-btn" data-category-button="design" style="display: none;"
+                        data-service="designing">View More
+                        DESIGN Project </a>
+                    <a href="#" class="view-more-btn" data-category-button="web" style="display: none;"
+                        data-service="web-applications">View More WEB
+                        Project </a>
+                </div>
+
+
+            </div>
+        </section>
+    </div>
+
+    <!-- End Portfolio Section -->
+
+
+
+
+
+    <!-- Start Testimonials Section -->
+
+    <div class="bgh">
+        <section class="testimonials-section" id="testimonials" aria-labelledby="testimonials-title">
+            <h2 class="testimonials-title" id="testimonials-title">CLIENT TESTIMONIALS</h2>
+            <div class="testimonials-container">
+                <div class="testimonial-card active" role="article">
+                    <div class="testimonial-content">
+                        <div class="stars" aria-label="5 star rating">
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <!-- <i class="fas fa-star" aria-hidden="true"></i> -->
+                        </div>
+                        <p>“Working with Creative Axis was an absolute pleasure. They brought our vision to life with
+                            stunning 3D renders that impressed our entire team. Highly recommended for any architectural
+                            visualization needs!”
+                        </p>
+                        <div class="client-info">
+                            <div class="client-avatar" aria-hidden="true"></div>
+                            <div>
+                                <h4>Sarah Johnson</h4>
+                                <!-- <span>Architect</span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" role="article">
+                    <div class="testimonial-content">
+                        <div class="stars" aria-label="5 star rating">
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <!-- <i class="fas fa-star" aria-hidden="true"></i> -->
+                        </div>
+                        <p>“Professional, responsive, and incredibly talented. The attention to detail in their 3D work
+                            truly sets them apart. We will definitely collaborate again!”
+                        </p>
+                        <div class="client-info">
+                            <div class="client-avatar" aria-hidden="true"></div>
+                            <div>
+                                <h4>Michael Chen</h4>
+                                <!-- <span>Marketing Director</span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" role="article">
+                    <div class="testimonial-content">
+                        <div class="stars" aria-label="5 star rating">
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                        </div>
+                        <p>“I was blown away by the quality and speed of delivery. Creative Axis turned our concept into
+                            a visual masterpiece. Their team is easy to communicate with and full of great ideas.”
+                        </p>
+                        <div class="client-info">
+                            <div class="client-avatar" aria-hidden="true"></div>
+                            <div>
+                                <h4>Emma Williams</h4>
+                                <!-- <span>Business Owner</span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots" role="tablist" aria-label="Testimonial navigation">
+                <button class="dot active" data-slide="0" role="tab" aria-selected="true"
+                    aria-label="Go to testimonial 1"></button>
+                <button class="dot" data-slide="1" role="tab" aria-selected="false"
+                    aria-label="Go to testimonial 2"></button>
+                <button class="dot" data-slide="2" role="tab" aria-selected="false"
+                    aria-label="Go to testimonial 3"></button>
+            </div>
+        </section>
+    </div>
+
+    <!-- End TESTIMONIALS SECTION -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Start Contact Section -->
+
+    <div class="bgh">
+        <section class="contact-section" id="contact" aria-labelledby="contact-title">
+            <div class="contact-header">
+                <h1 id="contact-title"><span>CONTACT</span> FOR ANY</h1>
+                <h2>QUERY</h2>
+            </div>
+            <form class="contact-form" novalidate aria-label="Contact form">
+                <!-- <form action="https://formspree.io/f/mgvyqqrd" method="POST" class="contact-form"></form> -->
+                <div class="form-row">
+                    <div class="input-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required
+                            aria-describedby="name-error">
+                        <div class="error-message" id="name-error" role="alert"></div>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required
+                            aria-describedby="email-error">
+                        <div class="error-message" id="email-error" role="alert"></div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Phone No" aria-describedby="phone-error">
+                        <div class="error-message" id="phone-error" role="alert"></div>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject"
+                            aria-describedby="subject-error">
+                        <div class="error-message" id="subject-error" role="alert"></div>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <textarea id="message" name="message" placeholder="Message Here" rows="4" required
+                        aria-describedby="message-error"></textarea>
+                    <div class="error-message" id="message-error" role="alert"></div>
+                </div>
+
+                <button type="submit" class="btn" aria-describedby="form-status">
+                    <span>SEND MESSAGE</span>
+                    <div class="btn-loader" aria-hidden="true"></div>
+                </button>
+
+                <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+            </form>
+        </section>
+    </div>
+
+    <!--End Contact Section -->
+
+
+
+
+
+    <!-- Start Footer Section -->
+
+    <div class="bgh">
+        <section class="foot" id="foot">
+            <footer class="footer" role="contentinfo">
+
+
+                <div class="footer-left">
+                    <a href="index.html" aria-label="Creative Axis Home">
+                        <img src="img/LogoWW.png" alt="Creative Axis Logo" class="footer-logo">
+                    </a>
+                    <p>© 2023. ALL RIGHTS RESERVED BY CREATIVE AXIS</p>
+                </div>
+
+
+                <div class="footer-right">
+                    <div class="footer-contact">
+                        <p>
+                            <a href="tel:+94764862828" aria-label="Call us at +94 7648 62828">
+                                <i class="fas fa-phone" aria-hidden="true"></i> Phone : +94 7648 62828
+                            </a>
+                        </p>
+                        <p>
+                            <a href="mailto:creativeaxis@gmail.com" aria-label="Send email to creativeaxis@gmail.com">
+                                <i class="fas fa-envelope" aria-hidden="true"></i> Email : creativeaxis@gmail.com
+                            </a>
+                        </p>
+                    </div>
+                    <hr class="footer-line" aria-hidden="true">
+                    <div class="footer-links">
+                        <div>
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><a href="#hero">Home</a></li>
+                                <li><a href="#Products">About Us</a></li>
+                                <li><a href="#portfolio">Works</a></li>
+                                <li><a href="#testimonials">Reviews</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>Services</h4>
+                            <ul class="services-list">
+                                <li><a href="#" data-service="3d-works">3D WORKS</a></li>
+                                <li><a href="#" data-service="video-editing">VIDEO EDITING</a></li>
+                                <li><a href="#" data-service="designing">DESIGNING</a></li>
+                                <li><a href="#" data-service="web-applications">WEB APPLICATIONS</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>Open Time</h4>
+                            <ul>
+                                <li>Monday - Saturday</li>
+                                <li>9AM - 9PM</li>
+                                <li>Sunday</li>
+                                <li>10AM - 8PM</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://wa.me/+94764862828" aria-label="Contact us on WhatsApp">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.facebook.com/share/15YEPPv2iP/" aria-label="Follow us on Facebook">
+                            <i class="fab fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@creative_axis?_t=ZS-8xn2ughdTE1&_r=1"
+                            aria-label="Follow us on TikTok">
+                            <i class="fab fa-tiktok" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.instagram.com/_creative_axis_?igsh=MWN1bmpranUxeWl0cw%3D%3D"
+                            aria-label="Follow us on Instagram">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.threads.net/@creative_axis" aria-label="Follow us on Threads">
+                            <i class="fab fa-threads" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </div>
+
+    <!-- Phone Popup -->
+    <div class="popup-bg" id="popup-bg">
+        <div class="popup-box">
+            <h3>Choose an Option</h3>
+            <button class="btn" id="call-btn">Call</button>
+            <button class="btn" id="sms-btn">SMS</button>
+        </div>
+    </div>
+
+    <!-- Service Details Popup -->
+    <div class="popup-bg" id="service-popup-bg" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="popup-box">
+            <h3 id="service-popup-title">Service Details</h3>
+            <ul id="service-popup-list">
+            </ul>
+            <button class="btn close-popup" aria-label="Close popup">Close</button>
+        </div>
+    </div>
+
+    <!-- End Footer Section -->
+
+
+
+
+
+    <!-- Start Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top" aria-hidden="true">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    <!-- End Back to Top Button -->
+
+
+
+
+
+    <!-- Screen reader only content -->
+    <div class="sr-only">
+        <h1>Creative Axis - Professional Creative Services</h1>
+        <p>We provide professional 3D modeling, video editing, graphic design, and web development services.</p>
+    </div>
+
+    <script src="scriptt.js"></script>
+</body>
+
+</html>
